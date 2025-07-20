@@ -6,7 +6,7 @@ export interface PostProps {
 }
 
 export interface UserProps {
-  id: number;
+  id?: number;
   name: string;
   username: string;
   email: string;
@@ -39,4 +39,37 @@ export interface PostData {
 export interface PostModalProps {
   onClose: () => void;
   onSubmit: (post: PostData) => void;
+}
+
+// interfaces/index.ts
+
+export interface UserData {
+  id?: number;
+  name: string;
+  username: string;
+  email: string;
+  address: {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+    geo: {
+      lat: string;
+      lng: string;
+    };
+  };
+  phone: string;
+  website: string;
+  company: {
+    name: string;
+    catchPhrase: string;
+    bs: string;
+  };
+}
+
+export interface UserModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+
+  onSubmit: (newUser: UserData) => void;
 }

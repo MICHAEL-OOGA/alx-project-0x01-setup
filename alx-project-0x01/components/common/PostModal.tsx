@@ -1,3 +1,5 @@
+// components/common/PostModal.tsx
+
 import { PostData, PostModalProps } from "@/interfaces";
 import React, { useState } from "react";
 

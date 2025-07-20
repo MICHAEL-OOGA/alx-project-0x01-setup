@@ -1,5 +1,3 @@
-// pages/posts/index.tsx
-
 import PostCard from "@/components/common/PostCard";
 import PostModal from "@/components/common/PostModal";
 import Header from "@/components/layout/Header";
